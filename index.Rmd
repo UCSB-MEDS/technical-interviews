@@ -164,6 +164,13 @@ class: inverse, middle, center
 Candidates are asked a series of interview questions, some of which require discussion about experience using particular data science tools and methodologies. Find all the interview questions [here](https://docs.google.com/document/d/1uX3Jg8iDtmceKCslmjk9nMrhhL4jRbYE-fKfdcwxCiQ/edit?usp=sharing).
 
 ---
+class: inverse, middle, center
+
+### `r fontawesome::fa("database", fill = "#93C6C2", a11y = "sem")` Example 4: Database Specialist @ Cary Institute of Ecosystem Studies
+
+Candidates were given 48 hours to complete [this technical exercise](https://docs.google.com/document/d/1XMMUwnq5DblgbqLlh6C9_kPMVeLnqNGNz_Wk4RrGPps/edit?usp=sharing).
+
+---
 ### Closing thoughts:
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")`</span>
