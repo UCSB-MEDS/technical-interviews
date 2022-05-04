@@ -1,0 +1,172 @@
+---
+title: "Demystifying the Technical Interview"
+author: "Sam Csik | Data Training Coordinator<br><span style = 'font-size: 65%;'>National Center for Ecological Analysis & Synthesis<br></span>"
+date: "<span style = 'font-size: 85%;'>Master of Environmental Data Science | Spring 2022</span><br><span style = 'font-size: 65%;'>Slides & source code available on [GitHub](https://github.com/UCSB-MEDS/technical-interviews)</span>"
+output:
+  xaringan::moon_reader:
+    css: ['xaringan-themer.css', 'my-css.css']
+    seal: false
+    nature:
+      countIncrementalSlides: false
+      titleSlideClass: ["left", "middle", "inverse"]
+      highlightLines: true
+      highlightStyle: github
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width = 9, fig.height = 3.5, fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringanExtra-share-again, echo=FALSE}
+# add share bar to slides
+xaringanExtra::use_share_again()
+```
+
+```{r xaringan-themer, include = FALSE, warning = FALSE}
+# load package
+library(xaringanthemer)
+
+# set accent theme
+style_mono_accent(
+  header_font_google = google_font("Nunito Sans"), # Sanchez
+  text_font_google = google_font("Glacial Indifference", "300", "300i"),
+  code_font_google = google_font("Fira Mono"),
+  base_color = "#05859B",
+  white_color = "#93C6C2", 
+  background_color = "#FFFFFF",
+  link_color = "#9b0546",
+  text_bold_color = "#05859B",
+  header_font_weight = 400,
+  header_h1_font_size = "2.25rem",
+  header_h2_font_size = "1.75rem",
+  header_h3_font_size = "1.5rem",
+  footnote_font_size = "0.7em",
+)
+```
+
+class: inverse, middle
+
+# `r fontawesome::fa("laptop-code", fill = "#93C6C2", a11y = "sem")` Demystifying the Technical Interview
+<br>
+
+<span style = 'font-size: 130%;'>Sam Csik | Data Training Coordinator</span>  
+
+National Center for Ecological Analysis & Synthesis<br>
+
+<br>
+
+<span style = 'font-size: 130%;'>Master of Environmental Data Science | Spring 2021</span>   
+
+Slides & source code available on [`r fontawesome::fa("github", fill = "#93C6C2", a11y = "sem")`](https://github.com/UCSB-MEDS/technical-interviews)
+
+---
+### `r fontawesome::fa("question", fill = "#05859B", a11y = "sem")` Technical interviews: what even are they?
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` They are a way for potential employers to assess a candidate's hard skills, knowledge of the field, and *how a candidate approaches technical problems/challenges*</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` They can be coding-based (live, take-home, whiteboarding), presentations, or answering questions about tools, methodologies, approaches, etc. out loud</span>
+
+<br>
+
+.center[
+```{r out.width = '50%', out.height = '50%', echo = FALSE}
+knitr::include_graphics("media/tech_interview_zoom.png")
+```
+]
+
+.center[
+<span style = 'font-size: 80%;'>Image source: [Technical interview resources](https://markodenic.com/resources-to-crush-the-technical-interview/) by Marko Denic</span>
+]
+
+---
+
+### `r fontawesome::fa("flushed", fill = "#05859B", a11y = "sem")` Technical interviews can be intimidating
+
+.center[
+```{r out.width = '50%', out.height = '50%', echo = FALSE}
+knitr::include_graphics("media/godzilla_top.png")
+```
+]
+
+.center[
+<span style = 'font-size: 80%;'>Source: This [tweet](https://twitter.com/catballar/status/1499036814044286977) by [@catballer](https://twitter.com/catballar)</span>
+]
+
+---
+### `r fontawesome::fa("brain", fill = "#05859B", a11y = "sem")` But you likely know more than you think!
+
+.center[
+```{r out.width = '50%', out.height = '50%', echo = FALSE}
+knitr::include_graphics("media/godzilla.png")
+```
+]
+
+.center[
+<span style = 'font-size: 80%;'>Source: This [tweet](https://twitter.com/catballar/status/1499036814044286977) by [@catballer](https://twitter.com/catballar)</span>
+]
+
+---
+### `r fontawesome::fa("question", fill = "#05859B", a11y = "sem")` Technical interview questions/tasks can take *many* forms
+
+Some very general examples: 
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Can you explain the difference between statistical test A and statistical test B?</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Explain and/or show how you would approach solving problem X.</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` What is the package/tool Y used for?</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Here is a data set. Using your preferred programming language, please answer question X.</span>
+
+The type, length, and difficulty of technical questions typically varies with the job level (e.g. junior vs. senior-level data scientist)
+
+---
+### `r fontawesome::fa("book-reader", fill = "#05859B", a11y = "sem")` There are ways to prepare:
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Analyze the job posting and organization's website</span>
+
+* <span style = 'font-size: 80%;'>identify what type of data science work/analyses you might be embarking on should you land/accept the job</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")`</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")`</span>
+
+---
+class: inverse, middle, center
+
+### `r fontawesome::fa("ship", fill = "#93C6C2", a11y = "sem")` Example 1: Fisheries Data Scientist and Coordinator @ Environmental Market Solutions Lab (emLab), UC Santa Barbara
+
+This technical component was provided to interviewees at interview round 2 (of 3). Check out the take-home task and associated job description [here](https://docs.google.com/document/d/1YxnLkj-IAD7ht4F8B91ExkjSsLnijFiW7dWgWx-UWbg/edit?usp=sharing).
+
+---
+class: inverse, middle, center
+
+### `r fontawesome::fa("fish", fill = "#93C6C2", a11y = "sem")` Example 2: Data Scientist (exact title unknown) @ Global Fishing Watch
+
+Candidates were given a choice of two different take-home challenges. Check them both out [here](https://docs.google.com/document/d/1OuewBioyncbnchWqLu-r-mGAJmj6uPPk7zTYO95cypU/edit?usp=sharing).
+
+---
+class: inverse, middle, center
+
+### `r fontawesome::fa("tree", fill = "#93C6C2", a11y = "sem")` Example 3: Data Specialist @ Bureau of Land Management
+
+Candidates are asked a series of interview questions, some of which require discussion about experience using particular data science tools and methodologies. Find all the interview questions [here](https://docs.google.com/document/d/1uX3Jg8iDtmceKCslmjk9nMrhhL4jRbYE-fKfdcwxCiQ/edit?usp=sharing).
+
+---
+### Closing thoughts:
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")`</span>
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Technical questions are often just one part of the overall interview process -- don't ignore the other interview skills you've learned!</span>
+
