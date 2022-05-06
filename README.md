@@ -6,4 +6,4 @@
 
 Description here
 
-Presentation slides are available [here]() [IN DEVELOPMENT].
+Presentation slides are available [here](https://ucsb-meds.github.io/technical-interviews/#1) [IN DEVELOPMENT].
