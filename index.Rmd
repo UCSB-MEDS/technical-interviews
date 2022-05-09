@@ -160,7 +160,7 @@ knitr::include_graphics("media/godzilla.png")
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Practice coding challenges -- there are a number of online resources/platforms including:</span>
 
-* <span style = 'font-size: 70%;'>[Kaggle competitions](https://www.kaggle.com/competitions), which are designed to provide challenges for competitors at all different stages of their machine learning careers.</span> 
+* <span style = 'font-size: 70%;'>[Kaggle competitions](https://www.kaggle.com/competitions), which are designed to provide challenges for competitors at all different stages of their machine learning careers</span> 
 * <span style = 'font-size: 70%;'>[stratascratch](https://www.stratascratch.com/), a data science platform with >1000 real interview questions (new questions added each month)</span>
 * <span style = 'font-size: 70%;'>[Confetti AI](https://www.confetti.ai/), a question bank covering core ideas in statistics, data science, and full-stack machine learning (new questions added each week)</span>
 * <span style = 'font-size: 70%;'>[LeetCode](https://leetcode.com/), a platform for enhancing your skills, expanding your knowledge and preparing for technical interviews (primarily geared towards software developers, rather than data scientists)</span>
