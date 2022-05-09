@@ -150,12 +150,20 @@ knitr::include_graphics("media/godzilla.png")
 * <span style = 'font-size: 70%;'>review the types of tools, methodologies, and approaches you might use to address the work/problems outlined in the employer's materials</span>
 * <span style = 'font-size: 70%;'>identify any areas you may not have direct experience in -- have an understanding of the landscape of tools available for working in that space and be able to reference a few (but be honest about your experience)</span>
 
+--
+
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Be able to talk about your project(s)</span>
 
 * <span style = 'font-size: 70%;'>Some technical questions or tasks are more open-ended (e.g. see Example 1 on [slide 12](https://ucsb-meds.github.io/technical-interviews/#7)). Be prepared to talk clearly and succinctly about your goals and contributions to a project.</span>
 
+--
 
-<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")`</span>
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Practice coding challenges -- there are a number of online resources/platforms including:</span>
+
+* <span style = 'font-size: 70%;'>[Kaggle competitions](https://www.kaggle.com/competitions), which are designed to provide challenges for competitors at all different stages of their machine learning careers.</span> 
+* <span style = 'font-size: 70%;'>[stratascratch](https://www.stratascratch.com/), a data science platform with >1000 real interview questions (new questions added each month)</span>
+* <span style = 'font-size: 70%;'>[Confetti AI](https://www.confetti.ai/), a question bank covering core ideas in statistics, data science, and full-stack machine learning (new questions added each week)</span>
+* <span style = 'font-size: 70%;'>[LeetCode](https://leetcode.com/), a platform for enhancing your skills, expanding your knowledge and preparing for technical interviews (primarily geared towards software developers, rather than data scientists)</span>
 
 ---
 class: inverse, middle, center
@@ -188,9 +196,17 @@ Candidates were given 48 hours to complete [this technical exercise](https://doc
 ---
 ### Some closing thoughts:
 
-<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Save your job postings (as pdfs, not just the URL) and any associated technical questions/challenges you may get during the interview process -- this not only helps you ensure that you highlight the skills they want see in a candidate but also review and practice past problems</span>
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Remember that many technical interview questions may not even have a correct answer -- interviewers want to see you reason and create solutions. Help them understand your thought processes by breaking down complex questions and talking out loud.</span>
+
+--
+
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Save your job postings (as pdfs, not just the URL) and any associated technical questions/challenges you may get during the interview process -- this not only helps you ensure that you highlight the skills they want see in a candidate but also allows you to review/practice past problems</span>
+
+--
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` You can learn a lot from the experiences of others (i.e. talk with one another!)</span>
+
+--
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Technical questions are often just one part of the overall interview process -- don't ignore the other interview skills you've learned!</span>
 
@@ -214,18 +230,31 @@ class: inverse, middle, center
 
 ## `r fontawesome::fa("brain", fill = "#93C6C2", a11y = "sem")` Practice questions
 
-Find a partner and practice responding to these technical (albeit silly) questions. A primary goal is to gain confidence in talking through your thought processes out loud as you attempt to answer these questions. You should feel free to ask explicit, clarifying questions (like you might do in an interview). Pick one out of a hat at random to keep things interesting :)
+Find a partner and practice responding to these technical (albeit silly) questions.  
+
+A primary goal is to gain confidence in talking through your thought processes out loud as you attempt to answer these questions. You should feel free to ask explicit, clarifying questions (like you might do in an interview).  
+
+Pick one at random to keep things interesting :)
 
 ---
 ### Practice questions
 
-<span style = 'font-size: 80%;'>**1.** How many tennis balls can you fit inside the NCEAS first floor classroom?</span>  
-<span style = 'font-size: 80%;'>**2.** How long would it take for you to walk across the Santa Barbara Channel from Ventura Harbor to Scorpion Anchorage.</span>  
-<span style = 'font-size: 80%;'>**3.** Explain, in detail, the process of making a cup of coffee.</span>  
-<span style = 'font-size: 80%;'>**4.** How many licks does it take to get to the center of a Tootsie Pop?</span>  
-<span style = 'font-size: 80%;'>**5.** You have 8 pennies and a scale. One penny weighs more than the others. Determine which penny weighs more in three or fewer steps. </span>  
-<span style = 'font-size: 80%;'>**6.** Given a number 1 to 1000, what is the minimum number of guesses you would need to find that particular number if you are only given the hints "higher" or "lower" after each of your guesses.</span>  
-<span style = 'font-size: 80%;'>**7.** How would you describe the taste of a cheeseburger (alternatively, substitute a different food here)?</span>  
-<span style = 'font-size: 80%;'>**8.** How many keystrokes does it take to wear the letters off your keyboard?</span>  
-<span style = 'font-size: 80%;'>**9.** Why don't whales have tails in the same direction as those of sharks?</span>  
-<span style = 'font-size: 80%;'>**10.** ?</span>
+<span style = 'font-size: 80%;'>The "interviewee" should try answering one of the following questions:</span>
+
+<span style = 'font-size: 70%;'>**1.** How many tennis balls can you fit inside the NCEAS first floor classroom?</span>  
+<span style = 'font-size: 70%;'>**2.** How long would it take for you to walk across the Santa Barbara Channel from Ventura Harbor to Scorpion Anchorage.</span>  
+<span style = 'font-size: 70%;'>**3.** Explain, in detail, the process of making a cup of coffee.</span>  
+<span style = 'font-size: 70%;'>**4.** How many licks does it take to get to the center of a Tootsie Pop?</span>  
+<span style = 'font-size: 70%;'>**5.** You have 8 pennies and a scale. One penny weighs more than the others. Determine which penny weighs more in three or fewer steps. </span>  
+<span style = 'font-size: 70%;'>**6.** Given a number 1 to 1000, what is the minimum number of guesses you would need to find that particular number if you are only given the hints "higher" or "lower" after each of your guesses.</span>  
+<span style = 'font-size: 70%;'>**7.** How would you describe the taste of a cheeseburger (alternatively, substitute a different food here)?</span>  
+<span style = 'font-size: 70%;'>**8.** How many keystrokes does it take to wear the letters off your keyboard?</span>  
+<span style = 'font-size: 70%;'>**9.** Why don't whales have tails that are oriented in the same direction as those of sharks?</span>  
+<span style = 'font-size: 70%;'>**10.** Why are doors rectangular instead of round or square?</span>
+
+<span style = 'font-size: 80%;'>The "interviewer" should make note of the following:</span>
+
+* <span style = 'font-size: 70%;'>Does the interviewee ask targeted follow-up questions?</span>
+* <span style = 'font-size: 70%;'>How does the interviewee break down the question/problem?</span>
+* <span style = 'font-size: 70%;'>Does the interviewee talk through his/her/their thought processes and reasoning *out loud*?</span>
+
