@@ -123,7 +123,7 @@ knitr::include_graphics("media/godzilla.png")
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Can you explain the difference between statistical test A and statistical test B?</span>
 
-<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Explain and/or show how you would approach solving problem X.</span>
+<span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` Given task X, explain your workflow and how you would collaborate with others.</span>
 
 <span style = 'font-size: 80%;'>`r fontawesome::fa("angle-right", fill = "#05859B", a11y = "sem")` What is the package/tool Y used for?</span>
 
